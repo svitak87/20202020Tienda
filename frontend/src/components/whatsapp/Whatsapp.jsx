@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./WhatsApp.css";
+import "./Whatsapp.css";
 
 export const WhatsApp = () => {
   const [hidden, setHidden] = useState(false);
