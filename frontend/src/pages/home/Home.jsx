@@ -26,7 +26,7 @@ export const Home = () => {
         <section className="hero-section">
           <img
             src={heroImage}
-            alt="This is Hardkore, marca colombiana de ropa urbana y cultura hip hop"
+            alt="Modelo de 20202020Tienda con estética streetwear retro y contracultural"
             className="hero"
             fetchPriority="high"
             decoding="async"
