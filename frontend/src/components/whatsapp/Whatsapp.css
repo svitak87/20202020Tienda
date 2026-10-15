@@ -25,7 +25,21 @@
 
   transition:
     transform 0.2s ease,
-    box-shadow 0.2s ease;
+    box-shadow 0.2s ease,
+    opacity 0.2s ease,
+    visibility 0s linear 0s;
+}
+
+.whatsapp-button.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease,
+    visibility 0s linear 0.2s;
 }
 
 .whatsapp-button:hover {
