@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/20202020-tienda-logo.png" />
+    <link rel="apple-touch-icon" href="/20202020-tienda-logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#272727" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Streetwear retro y contracultural: rompevientos, camisetas retro y accesorios vintage de 20202020Tienda. Ropa vintage de segunda mano y upcycling en Bogotá."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="20202020Tienda" />
+    <meta property="og:locale" content="es_CO" />
+    <meta
+      property="og:title"
+      content="20202020Tienda | Streetwear retro, upcycling y ropa vintage"
+    />
+    <meta
+      property="og:description"
+      content="Streetwear retro y contracultural: rompevientos, camisetas retro y accesorios vintage de 20202020Tienda. Ropa vintage de segunda mano y upcycling en Bogotá."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="20202020Tienda | Streetwear retro, upcycling y ropa vintage"
+    />
+    <meta
+      name="twitter:description"
+      content="Streetwear retro y contracultural: rompevientos, camisetas retro y accesorios vintage de 20202020Tienda. Ropa vintage de segunda mano y upcycling en Bogotá."
+    />
+    <script>
+      (function () {
+        var theme = "light";
+        try {
+          var stored = localStorage.getItem("theme");
+          if (stored === "light" || stored === "dark") {
+            theme = stored;
+          } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            theme = "dark";
+          }
+        } catch (error) {
+          theme = "light";
+        }
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+    <title>20202020Tienda | Streetwear retro, upcycling y ropa vintage</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

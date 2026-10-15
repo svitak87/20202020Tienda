@@ -1,0 +1,161 @@
+.footer {
+  width: 100%;
+  padding: 2rem 1rem 0;
+  background-color: var(--primary);
+  color: var(--secundary);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-brand,
+.footer-contact,
+.footer-payment,
+.footer-social {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer h2,
+.footer h3 {
+  margin: 0 0 1rem;
+  color: inherit;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-contact {
+  gap: 0.75rem;
+}
+
+.footer-contact p {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-contact i {
+  width: 20px;
+  text-align: center;
+}
+
+.footer-contact a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.payment-icons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.payment-icons i {
+  font-size: 2rem;
+}
+
+.payment-text {
+  padding: 0.4rem 0.7rem;
+  border: 1px solid #777;
+  border-radius: 5px;
+  font-size: 0.85rem;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #777;
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.social-icons a:hover {
+  transform: translateY(-3px);
+  background-color: #fff;
+  color: #222;
+  border-color: #fff;
+}
+
+.footer-bottom {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  border-top: 1px solid #444;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 0.8rem;
+}
+
+.footer-bottom .fa-heart {
+  margin-left: 0.2rem;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 3rem 2rem 0;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    gap: 3rem;
+  }
+
+  .footer-payment {
+    display: none;
+  }
+
+  .payment-icons {
+    gap: 0.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-payment {
+    display: block;
+  }
+
+  .footer-bottom .footer-20202020 {
+    margin-left: calc(50% - 50vw);
+  }
+  .footer-bottom p {
+    margin-top: 2rem;
+  }
+
+  .footer-bottom .footer-20202020 span {
+    display: block;
+    width: 100%;
+    font-size: 22vw;
+    font-weight: 900;
+    line-height: 0.8;
+    letter-spacing: -0.09em;
+    white-space: nowrap;
+  }
+}

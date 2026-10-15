@@ -1,0 +1,125 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero {
+  width: 100%;
+  min-height: 300px;
+}
+
+.brand-intro {
+  width: 100%;
+  padding: 30px 15px;
+  box-sizing: border-box;
+}
+
+.brand-intro h1 {
+  margin: 0 0 12px;
+}
+
+.hero-title {
+  display: none;
+}
+
+.hero-one {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.hero-one img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.hero-two {
+  width: 100%;
+  margin: 0 auto;
+  padding-inline: clamp(8px, 1.5vw, 24px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(12px, 2vw, 32px);
+  overflow-x: hidden;
+}
+
+.hero-two img {
+  display: block;
+  flex: 1 1 0;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+#image-big {
+  display: none;
+}
+
+.hero-title img {
+  width: 0.8em;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 6px;
+}
+
+.wall-posters {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+.wall-posters img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .wall-posters {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 0 auto;
+  }
+
+  .wall-posters img{
+    max-height: 500px;
+  }
+}
+
+
+ @media (min-width: 1024px) {
+  .hero-two {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .hero-two img {
+    flex: 1 1 0;
+    width: 0;
+    min-width: 0;
+    max-width: 100%;
+    height: auto;
+  }
+
+  #image-big {
+    display: block;
+  }
+}
+

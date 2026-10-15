@@ -1,0 +1,256 @@
+.location {
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+.location h2 {
+  margin: 0 0 2rem;
+}
+
+.location-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.location-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  border: 1px solid var(--alternative);
+  border-radius: 12px;
+}
+
+.location-info h3 {
+  margin: 0 0 0.5rem;
+}
+
+.location-info p {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0;
+}
+
+.location-info i{
+    color: var(--alternative);
+}
+
+.location-info p i {
+  width: 20px;
+  text-align: center;
+}
+
+/* Botón */
+.location-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  width: fit-content;
+  margin-top: 0.5rem;
+  padding: 0.75rem 1rem;
+
+  border-radius: 8px;
+  background-color: var(--bg-box);
+  color: var(--text);
+
+  text-decoration: none;
+  font-weight: 600;
+
+  transition: opacity 0.2s ease;
+}
+
+.location-button:hover {
+  opacity: 0.85;
+}
+
+.location-map {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.location-map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+/* Tablet: hasta 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .location {
+    padding: 3rem 2rem;
+  }
+
+  .location-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .location-info {
+    padding: 2rem;
+    color: var(--fg);
+  }
+
+  .location-map {
+    height: 400px;
+  }
+}
+
+/* Desktop: desde 1024px */
+
+.location {
+  width: 100%;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+.location h2 {
+  margin: 0 0 2rem;
+}
+
+/* Contenedor de todas las ubicaciones */
+.locations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Tarjeta individual de cada ubicación */
+.location-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  min-width: 0;
+}
+
+/* Información de la ubicación */
+.location-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 0;
+  padding: 1.5rem;
+  border: 1px solid var(--alternative);
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.location-info h3 {
+  margin: 0 0 0.5rem;
+}
+
+.location-info p {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.location-info i {
+  color: var(--alternative);
+}
+
+.location-info p i {
+  flex: 0 0 20px;
+  width: 20px;
+  margin-top: 0.2rem;
+  text-align: center;
+}
+
+/* Botón para abrir Google Maps */
+.location-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  background-color: var(--bg-box);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  box-sizing: border-box;
+  transition: opacity 0.2s ease;
+}
+
+.location-button:hover {
+  opacity: 0.85;
+}
+
+/* Mapa de Google */
+.location-map {
+  width: 100%;
+  height: 300px;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.location-map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+  .location {
+    padding: 3rem 2rem;
+  }
+
+  .locations-list {
+    gap: 3rem;
+  }
+
+  .location-card {
+    gap: 1.5rem;
+  }
+
+  .location-info {
+    padding: 2rem;
+    color: var(--fg);
+  }
+
+  .location-map {
+    height: 400px;
+  }
+}
+
+/* Escritorio: información y mapa en una misma fila */
+@media (min-width: 1024px) {
+  .location-card {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 2rem;
+  }
+
+  .location-info {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .location-map {
+    flex: 2 1 0;
+    min-width: 0;
+    height: auto;
+    min-height: 350px;
+  }
+}

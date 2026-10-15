@@ -1,0 +1,91 @@
+:root {
+  --primary: #272727;
+  --secundary: #faf9fc;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+
+  --bg: var(--secundary);
+  --surface: #ffffff;
+  --fg: var(--primary);
+  --secondary: var(--secundary);
+  --alt: var(--primary);
+  --alternative: var(--primary);
+  --bg-box: var(--primary);
+  --text: var(--secundary);
+
+  color-scheme: light;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[data-theme="dark"] {
+  --bg: var(--primary);
+  --surface: #333333;
+  --fg: var(--secundary);
+  --secondary: var(--primary);
+  --alt: var(--secundary);
+  --alternative: var(--secundary);
+  --bg-box: var(--secundary);
+  --text: var(--primary);
+
+  color-scheme: dark;
+}
+
+
+body {
+  margin: 0;
+}
+
+html[data-theme] body {
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--fg);
+}
+
+p {
+  margin: 0;
+}
+
+.section-description {
+  margin: 0 0 20px;
+  max-width: 70ch;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+#top,
+#rompevientos,
+#camisetas,
+#eventos,
+#ubicacion,
+#accesorios {
+  scroll-margin-top: var(--navbar-offset, 0px);
+}
